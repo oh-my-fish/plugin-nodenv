@@ -1,35 +1,41 @@
-<img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
+![][license-badge]
 
-#### nodenv
-> [nodenv] integration for [Oh My Fish][omf-link].
+<div align="center">
+  <a href="http://github.com/oh-my-fish/oh-my-fish">
+  <img width=90px  src="https://cloud.githubusercontent.com/assets/8317250/8510172/f006f0a4-230f-11e5-98b6-5c2e3c87088f.png">
+  </a>
+</div>
+<br>
 
-[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
-[![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+#  [_rbenv_](https://github.com/sstephenson/rbenv)
 
-<br/>
+Ruby environment/version manager plugin for [Oh My Fish][omf-link].
 
 ## Install
+> _Note_: You need to have `rbenv` installed.
 
 ```fish
-$ omf install nodenv
+$ omf install rbenv
 ```
 
+## Configuration
 
-## Usage
+If you have a custom rbenv root, you can add the following to your `~/.config/fish/init.fish` file before sourcing Oh My Fish.
 
-See [nodenv] documentation.
-
+```
+set -gx RBENV_ROOT #path
+```
 
 # License
 
-[MIT][mit] © [Oh My Fish contributors][contributors]
+[MIT][mit] © [bpinto][author] et [al][contributors]
 
 
-[nodenv]:         https://github.com/OiNutter/nodenv
 [mit]:            http://opensource.org/licenses/MIT
-[author]:         http://github.com/oh-my-fish
-[contributors]:   https://github.com/oh-my-fish/plugin-nodenv/graphs/contributors
+[author]:         http://github.com/bpinto
+[contributors]:   https://github.com/oh-my-fish/plugin-rbenv/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
+[travis-badge]:   http://img.shields.io/travis/oh-my-fish/plugin-rbenv.svg?style=flat-square
+[travis-link]:    https://travis-ci.org/oh-my-fish/plugin-rbenv
